@@ -24,21 +24,29 @@ class RecipeActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
+
+
             R.id.ActionBtnRecipes -> {
                 val recipeActionIntent = Intent(this, RecipeActivity::class.java)
                 startActivity(recipeActionIntent)
                 return true
             }
+
+
             R.id.ActionBtnFavorites -> {
                 val favoritesActionIntent = Intent(this, FavoriteActivity::class.java)
                 startActivity(favoritesActionIntent)
                 return true
             }
+
+
             R.id.ActionBtnMyFridge -> {
                 val fridgeActionIntent = Intent(this, MyFridgeActivity::class.java)
                 startActivity(fridgeActionIntent)
                 return true
             }
+
+
             R.id.ActionBtnGrocery -> {
                 val groceryActionIntent = Intent(this, GroceryActivity::class.java)
                 startActivity(groceryActionIntent)
